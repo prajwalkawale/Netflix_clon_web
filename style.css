@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "arial";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+    url("./netflix_background-img.jpg");
+
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+button {
+  padding: 6px 36px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ff0000;
+  font-size: 14px;
+  margin-left: 10px;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 6px 10px;
+}
+.nav-button img {
+  width: 10px;
+  margin-left: 10px;
+}
+
+.nav i {
+  margin-right: 10px;
+}
+
+.header-contaner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header-contaner h1 {
+  font-size: 60px;
+  line-height: 70px;
+  width: 600px;
+}
+.header-contaner h3 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.email-signup {
+  background-color: #0c000010;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.email-signup input {
+  flex: 1;
+  /* margin-left: 20px; */
+  padding: 24px 16px 8px;
+  width: 100%;
+  min-height: 16px;
+  min-width: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #303030b6;
+  color: white;
+}
+.email-signup button {
+  background-color: #bd0001;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 20px 25px;
+}
+/* Feature Elemenr */
+.features {
+  padding: 50px 12%;
+}
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.text-col {
+  flex-basis: 50%;
+}
+.feature1-img {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.feature1-img img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+.text-col h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.text-col p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* foot section */
+
+.foot {
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.foot h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.foot-ul {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+
+.foot-ul li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+.foot-ul label {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.foot-ul .content {
+  background-color: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.foot-ul input[type="radio"]:checked + label + .content {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+
+.foot-ul input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+
+.foot .email-signup {
+  max-width: 600px;
+  margin: 20px auto 60px;
+}
+
+.foot .small {
+  font-size: 13px;
+}
+.net-footer {
+  padding: 50px 15% 10px;
+  border-top: 6px solid #333;
+  color: #777;
+}
+.net-footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.net-footer .col {
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.net-footer .col a {
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.net-footer .row {
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+.copy-right {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* media-queries-for - small- screen  */
+
+@media only screen and (max-width: 600px){
+  .logo {
+    width:30%
+  }
+
+  .nav button{
+    padding: 5px 10px;
+  }
+
+  .header-contaner {
+    position:unset;
+    transform: none;
+    padding-top: 200px;
+  }
+  .header-contaner h1 {
+    font-size:30px;
+    line-height:100%;
+    width:auto;
+  }
+  .header-contaner p{
+    font-size:small;
+  }
+  .header-contaner h3{
+    font-size:medium;
+  }
+  .email-signup{
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+
+  .email-signup input{
+    padding: 10px 10px 10px 15px;
+    margin-left: 15px;
+  }
+  .email-signup button{
+    padding: 12px;
+    font-size:small;
+  }
+  .row {
+    display:unset;
+    /* width:50%; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    padding: 20px 0;
+  }
+  .text-col h1{
+    font-size:1.5rem;
+    font-weight: 900;
+  }
+  .text-col p{
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .row:nth-child(2),.row:nth-child(4){
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .foot h2{
+    font-size: 1.5rem;
+  }
+  .features .row{
+    padding: 5px 0;
+  } 
+  .foot-ul label{
+    margin:2px auto;
+    font-size:15px;
+    width: 100%;
+    max-width: 750px;
+  }
+  .content p{
+    font-size: 15px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
